@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: bee-swarm-boss
+    env: docker
+    dockerImage: docker.io/n8nio/n8n:latest
+    plan: free
+    envVars:
+      - key: DB_TYPE
+        value: postgresdb
+      - key: DB_POSTGRES_HOST
+        value: ://supabase.com
+      - key: DB_POSTGRES_PORT
+        value: "6543"
+      - key: DB_POSTGRES_USER
+        value: postgres.wkjshexqudwfqcnhrobe
+      - key: DB_POSTGRES_PASSWORD
+        value: Gold7995000_
+      - key: DB_POSTGRES_DATABASE
+        value: postgres
